@@ -1,4 +1,2 @@
-find . -iname "bin" | xargs rm -rf
-find . -iname "obj" | xargs rm -rf
-find . -iname "build" | xargs rm -rf
-find . -iname "Makefile" | xargs rm -rf
+# run to delete compiled code
+rm -rf build/raylib-game-template

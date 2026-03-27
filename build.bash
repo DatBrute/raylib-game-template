@@ -1,1 +1,2 @@
-cmake -S . -B build && cmake --build build
+# run when code should be compiled
+cmake --build build
