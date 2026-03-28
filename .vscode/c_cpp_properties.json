@@ -4,7 +4,10 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/build/_deps/raylib-src/src",
-                "${workspaceFolder}/src/**"
+                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/src/server/**",
+                "${workspaceFolder}/src/client/**",
+                "${workspaceFolder}/src/networking/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -15,7 +18,7 @@
             ],
             "cStandard": "c99",
             "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64"
         },
         {
             "name": "Mac",
