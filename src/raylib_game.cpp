@@ -118,7 +118,7 @@ int main(void)
 // Module Functions Definition
 //----------------------------------------------------------------------------------
 // Change to next screen, no transition
-static void ChangeToScreen(int screen)
+static void ChangeToScreen(GameScreen screen)
 {
     // Unload current screen
     switch (currentScreen)
@@ -146,7 +146,7 @@ static void ChangeToScreen(int screen)
 }
 
 // Request transition to next screen
-static void TransitionToScreen(int screen)
+static void TransitionToScreen(GameScreen screen)
 {
     onTransition = true;
     transFadeOut = false;
