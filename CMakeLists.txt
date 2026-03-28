@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.24...3.30)
 project(raylib-game-template C CXX)
 
+set(CMAKE_CXX_STANDARD 23)
+
 include(FetchContent)
 
 # Generate compile_commands.json
