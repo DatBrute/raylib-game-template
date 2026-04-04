@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24...3.30)
-project(raylib-game-template C CXX)
+project(raylib-game-template CXX)
 
 set(CMAKE_CXX_STANDARD 23)
 
@@ -10,6 +10,17 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Dependencies
 set(RAYLIB_VERSION 5.5)
+
+# FetchContent_Declare(
+#     boostpfr
+#     DOWNLOAD_EXTRACT_TIMESTAMP OFF
+#     URL https://github.com/boostorg/pfr/archive/refs/tags/boost-1.90.0.tar.gz
+#     FIND_PACKAGE_ARGS
+# )
+
+# FetchContent_MakeAvailable(boostpfr)
+
+add_subdirectory(submodules)
 
 FetchContent_Declare(
     raylib
@@ -45,6 +56,8 @@ endif()
 
 #set(raylib_VERBOSE 1)
 target_link_libraries(${PROJECT_NAME} raylib)
+# target_link_libraries(${PROJECT_NAME} boost-pfr)
+target_link_libraries(${PROJECT_NAME} cista)
 
 # Web Configurations
 if ("${PLATFORM}" STREQUAL "Web")

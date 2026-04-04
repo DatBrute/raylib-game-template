@@ -3,11 +3,10 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/build/_deps/raylib-src/src",
+                "${workspaceFolder}/build/_deps/**",
                 "${workspaceFolder}/src/**",
-                "${workspaceFolder}/src/server/**",
-                "${workspaceFolder}/src/client/**",
-                "${workspaceFolder}/src/networking/**"
+                "${workspaceFolder}/include/**",
+                "${workspaceFolder}/submodules/cista/**"
             ],
             "defines": [
                 "_DEBUG",

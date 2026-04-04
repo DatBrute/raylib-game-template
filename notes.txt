@@ -1,0 +1,5 @@
+std::cout << std::chrono::zoned_time{"Europe/Rome", std::chrono::system_clock::now()} << '\n';
+
+src/makefile must be updated to specify c or cpp
+
+https://learn.microsoft.com/en-us/vcpkg/get_started/get-started-vscode?pivots=shell-powershell
