@@ -8,4 +8,5 @@ struct Foo {int x;};
 
 class Serializer{
     Foo foo = {1};
+    cista::offset::vector<std::string> test = {"hi, bye"};
 };
